@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre les multi colonnes en CSS</title>
+
+    <style>
+            .container 
+            {
+                /* column-count: 3; */
+                column-fill: balance;
+                column-gap: calc(300px - 200px);
+                /* column-rule: 2px solid  #3ce; */
+                column-rule-color: #2ce;
+                column-rule-style: solid;
+                column-rule-width:4px ;
+                /* column-width: 200px; */
+
+                columns: 3;
+            }
+
+            #p2 
+            {
+                column-span: all;
+            }
+    </style>
+</head>
+<body>
+
+    <h1>Apprendre les multi colonnes en CSS</h1>
+    <!-- 
+        column-count
+        column-fill (auto, balance, balance-all)
+        column-gap
+        column-rule (color, style, width)
+        column-span (none, all)
+        column-width 
+        columns 
+     -->
+
+
+     <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta corrupti accusamus asperiores, libero provident officiis vitae dolorem est nihil cupiditate, modi nostrum explicabo. Aperiam in vitae dolore sunt itaque excepturi!</p>
+            <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta corrupti accusamus asperiores, libero provident officiis vitae dolorem est nihil cupiditate, modi nostrum explicabo. Aperiam in vitae dolore sunt itaque excepturi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta corrupti accusamus asperiores, libero provident officiis vitae dolorem est nihil cupiditate, modi nostrum explicabo. Aperiam in vitae dolore sunt itaque excepturi!</p>
+     </div>
+
+    
+</body>
+</html>

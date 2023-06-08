@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre la pseudo classe :empty</title>
+
+    <style>
+
+        body 
+        {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box, .box2
+        {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+
+        .box:empty, .box2:empty
+        {
+            background-color: blue;
+        }
+
+        .box2::after
+        {
+            content: "Contenu ajouté avec CSS.";
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- 
+        Consigne : Mettez toutes les balises vides en bleu et toutes les balises nons 
+        vides en rouge
+     -->
+    <div class="box"><!-- Je serai en bleu car je suis une balise vide --></div>
+    <div class="box"></div>
+    <div class="box"> </div>
+    <div class="box">Je serai en rouge car je suis un contenu</div>
+    <div class="box">
+        <!-- Je serai en rouge à cause des espacements autour de ce commentaire -->
+    </div>
+
+    <div class="box2"></div>
+
+</body>
+</html>

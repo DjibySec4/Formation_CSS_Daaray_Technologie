@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre les pseudo classes :valid et :invalid</title>
+
+    <style>
+
+        input 
+        {
+            border-width: 3px;
+            min-width: 18em;
+        }
+
+        input:valid 
+        {
+            background-color: lime;
+            font-weight: bold;
+        }
+
+        input:invalid 
+        {
+            background-color: pink;
+            font-weight: bold;
+        }
+
+        form:valid 
+        {
+            background-color: lime;
+        }
+
+        form:invalid 
+        {
+            background-color: red;
+        }
+
+
+         input:required + span::after
+         {
+            content: "*";
+            color: red;
+         }
+
+         form 
+         {
+            padding: 23px;
+         }
+    </style>
+</head>
+<body>
+    <h1>Apprendre les pseudo classes valid et invalid</h1>
+
+    <form>
+        <label for="url">
+            Entrer une URL
+            <input type="url" id="url">
+        </label>
+
+        <label for="email">
+            Entrer une adresse email
+            <input type="email" id="email" required>
+            <span></span>
+        </label>
+    </form>
+
+</body>
+</html>

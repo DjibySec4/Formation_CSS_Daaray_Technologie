@@ -1,0 +1,16 @@
+p 
+{
+    font-size: 21px;
+    color: red;
+    border: 2px solid black;
+
+
+    margin-bottom: 44px;
+    margin-top: 35px;
+    margin-right: 78px;
+    margin-left: 36px;
+    border-top-width: 12px;
+    border-bottom-width: 12px;
+    border-left-width: 4px;
+    border-right-width: 8px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre les dégradés - linear-gradient</title>
+
+    <style>
+         div 
+         {
+            margin-top: 60px;
+            height: 300px;
+            font-size: 30px;
+
+            /* background: -webkit-linear-gradient(left, red, orange, blue);
+            background: -moz-linear-gradient(top right, red, orange, blue);
+            background: -ms-linear-gradient(top right, red, orange, blue);
+            background: -o-linear-gradient(top right, red, orange, blue);
+            background: linear-gradient(to top right, red, orange, blue); */
+
+
+            /* Crrection exo : */
+
+            /* 1) Un dégradé incliné à 45 degrés, commençant bleu et finissant rouge */
+            /* background: linear-gradient(45deg,blue, red); */
+
+            /* 3) Un dégradé allant du bas vers le haut, commençant bleu, virant au vert à 40% de sa longueur,
+                  et finition rouge */
+                /* background: linear-gradient(0deg, blue, green 40%, red); */
+
+   
+            /* 4) Un dégradé allant de gauche à droite, commencer par le rouge, arriver à la couleur médiane 10 % 
+                de la longueur du gradient, prendre le reste des 90% de la longueur pour passer au bleu */
+                /* background: linear-gradient(.25turn, red, 10%, blue); */
+
+
+            /* 5) Un dégradé incliné à 45 degrés, avec une moitié inférieure gauche rouge et
+                une moitié supérieure droite bleu, avec une ligne dure où le dégradé passe du rouge au bleu */
+                background: linear-gradient(45deg, red 0 50%, blue 50% 100%);
+         }
+    </style>
+</head>
+<body>
+    
+    <!-- Apprendre les dégradés - linear-gradient -->
+    <div id="style-linear"></div>
+
+
+    <!-- 
+        Exercice : 
+        ---------
+       
+       
+        2) Un dégradé allant de la gauche vers le haut, commençant bleu et finissant rouge
+
+        3) Un dégradé allant du bas vers le haut, commençant bleu, virant au vert à 40% de sa longueur,
+           et finition rouge
+        
+        4) Un dégradé allant de gauche à droite, commencer par le rouge, arriver à la couleur 
+           médiane 10 % de la longueur du gradient, prendre le reste des 90% de la longueur pour passer au bleu
+       
+        5) Un dégradé incliné à 45 degrés, avec une moitié inférieure gauche rouge
+           et une moitié supérieure droite bleue, avec une ligne dure où le dégradé passe du rouge au bleu
+     -->
+
+     <!-- 
+      Les préfixes vendeurs
+      ---------------------
+         Chrome et Safari
+         background: -webkit-linear-gradient(0deg, red, orange, blue);
+
+         Mozilla Firefox
+         background: -moz-linear-gradient(0deg, red, orange, blue);
+
+         Internet Explorer
+         background: -ms-linear-gradient(0deg, red, orange, blue);
+
+         Opéra
+         background: -o-linear-gradient(0deg, red, orange, blue);
+    -->
+</body>
+</html>

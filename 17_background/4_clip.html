@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre les propriété CSS background-clip</title>
+    <style>
+        p 
+        {
+            border: 10px navy;
+            border-style: dotted double;
+            margin: 1em;
+            padding: 2em;
+            background-color: #F8D575;
+            font: 900 1.2em sans-serif;
+            text-decoration: underline;
+        }
+
+        .border-box 
+        {
+            background-clip: border-box;
+        }
+
+        .padding-box 
+        {
+            background-clip: padding-box;
+        }
+
+        .content-box 
+        {
+            background-clip: content-box;
+        }
+
+        .text 
+        {
+            background-clip: text;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Apprendre les propriété CSS background-clip</h1>
+
+    <p class="border-box">
+        L'arrière plan s'étant sous la bordure (border-box)
+    </p>
+
+    <p class="padding-box">
+        L'arrière plan s'étant jusqu'avant la bordure (padding-box)
+    </p>
+    
+    <p class="content-box">
+        L'arrière plan englobe juste le contenu (content-box)
+    </p>
+    
+    <p class="text">
+        L'arrière plan s'étant sous la bordure (text)
+    </p>
+
+</body>
+</html>

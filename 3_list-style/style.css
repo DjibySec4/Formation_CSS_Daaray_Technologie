@@ -1,0 +1,13 @@
+.one 
+{
+     /* long hand */
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+
+.two
+{
+    /* short hand */
+    list-style: square inside; 
+}

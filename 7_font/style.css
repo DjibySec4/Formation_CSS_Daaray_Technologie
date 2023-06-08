@@ -1,0 +1,23 @@
+div 
+{
+    font-size: 18px;
+}
+p 
+{
+    font-size: 100%;
+    font-weight: 700;
+    font-style: italic;
+    font-family: "Sofia", sans-serif;
+}
+
+
+#p1 
+{
+    font-variant: normal;
+}
+
+
+#p2
+{
+    font-variant: small-caps;
+}

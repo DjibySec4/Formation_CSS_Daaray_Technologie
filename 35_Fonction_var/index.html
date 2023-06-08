@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre la fonction var</title>
+</head>
+<body>
+
+    <style>
+        /* Variable globale */
+        :root 
+        {
+            --blue : pink;
+        }
+        #div1, #div2, #div3 
+        {
+            
+            border: 2px solid var(--blue);
+            padding: 30px;
+            width: 200px;
+            margin: 30px;
+        }
+
+        #btn1, #btn2 
+        {   
+            background-color: var(--blue);
+        }
+
+        img 
+        {
+          
+            --bleu-bic : #0000ff;   /* Variable locale */
+            border: 5px solid var(--bleu-bic);
+        }
+    </style>
+
+    <h1>Apprendre la fonction var</h1>
+
+    <div id="div1">
+        Je suis le paragraphe du div 1
+    </div>
+
+    <div id="div2">
+        Je suis le paragraphe du div 2
+    </div>
+
+    <div id="div3">
+        Je suis le paragraphe du div 3
+    </div>
+
+    <button id="btn1" onclick="document.getElementById('myPic').src='../public/images/art.jpg'">
+        Changer l'image
+    </button>
+
+    <img id="myPic" src="../public/images/DjibySeck.jpg" alt="" width="200px" height="200px">
+
+    <button id="btn2" onclick="document.getElementById('myPic').src='../public/images/DjibySeck.jpg'">
+        Reinitialiser l'image
+    </button>
+</body>
+</html>

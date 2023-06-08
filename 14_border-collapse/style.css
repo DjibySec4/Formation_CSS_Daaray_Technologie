@@ -1,0 +1,42 @@
+table 
+{
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+th, td 
+{   
+    border: 1px solid black;
+    padding: 20px;    
+}
+
+.fa-trash
+{
+    color: brown;
+    margin-right: 10px;
+}
+
+.fa-pen-to-square
+{
+    color: green;
+}
+
+
+table thead tr
+{
+    background-color: rgb(237, 240, 240);
+}
+
+
+
+/* tr:nth-child(even)
+{
+    background-color: pink;
+}
+
+tr:nth-child(odd)
+{
+    background-color: #1ce;
+}
+ */

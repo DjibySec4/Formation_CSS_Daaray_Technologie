@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre les repeat-gradient</title>
+
+    <style>
+         #repeating-linear-gradient
+         {
+            margin-top: 60px;
+            height: 200px;
+            width: 200px;
+            font-size: 30px;
+
+            background: repeating-linear-gradient(-45deg, transparent 0 20px , black 20px 40px);
+             
+        }
+
+
+        #repeating-radial-gradient
+         {
+            margin-top: 60px;
+            height: 200px;
+            width: 200px;
+            font-size: 30px;
+
+            /* background: repeating-radial-gradient(brown , gray 20%); */
+            background: repeating-radial-gradient(closest-side, brown , gray 20%);
+             
+        }
+
+        #repeating-conic-gradient
+         {
+            margin-top: 60px;
+            height: 200px;
+            width: 200px;
+            font-size: 30px;
+
+            background: repeating-conic-gradient(brown , gray 20%);
+             
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 
+        Apprendre les les repeat-gradient
+        --------------------------------
+        repeating-linear-gradient()
+        repeating-radial-gradient()
+        repeating-conic-gradient()
+    
+    -->
+    <div id="repeating-linear-gradient"></div>
+    <div id="repeating-radial-gradient"></div>
+    <div id="repeating-conic-gradient"></div>
+
+
+  
+</body>
+</html>

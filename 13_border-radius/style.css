@@ -1,0 +1,14 @@
+div 
+{
+    border: 1px solid #222;
+    background-color: #1ce;
+    height: 300px;
+    width: 300px;
+    margin: 8% auto;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+

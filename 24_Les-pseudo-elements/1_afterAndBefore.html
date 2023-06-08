@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre les pseudo éléments ::after et ::before</title>
+
+    <style>
+        #p1::after
+        {
+            content: " - contenu ajouté avec css.";
+            color: green;
+        }
+
+        /* p:first-of-type::after 
+        {
+            content: " - contenu ajouté avec css.";
+            color: green;
+        } */
+
+        #p2::before
+        {
+            content: " - contenu ajouté avec css.";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div>
+        <p id="p1">Je suis un premier paragraphe</p>
+        <p id="p2">Je suis un deuxieme paragraphe</p>
+    </div>
+</body>
+</html>

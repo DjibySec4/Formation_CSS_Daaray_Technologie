@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre les pseudo classes in-range out-range</title>
+
+    <style>
+        li 
+        {
+            list-style: none;
+            margin-bottom: 1em;
+        }
+
+        input:in-range 
+        {
+            background-color: gray;
+            color: lime;
+            font-weight: bold;
+        }
+
+        input:out-of-range 
+        {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+
+
+        input:in-range + label::after
+        {
+           content: "Ok ✅";
+        }
+
+        input:out-of-range + label::after
+        {
+           content: "non autorisée ❌";
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Apprendre les pseudo classes in-range out-range</h1>
+
+  <form action="">
+        <ul>
+            Seulement les valeurs comprise entre 1 et 10 sont autorisées
+            <li>
+                <input type="number" min="1" max="10" placeholder="de 1 à 10" value="12" >
+                <label>Votre valeur est </label>
+            </li>
+        </ul>
+  </form>
+</body>
+</html>

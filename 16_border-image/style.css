@@ -1,0 +1,18 @@
+body 
+{
+    border-style: solid;
+    height: 200px;
+    width: 300px;
+    margin: 50px auto;
+
+    /* ----------- long hand ------------------------ */
+    /* border-image: url('../public/images/border-diamonds.png') 30 fill / 30px; */
+    border-image: linear-gradient(orange, blue) 30;
+
+    /* ----------- long hand ------------------------ */
+    /* border-image-source: url('../public/images/border-diamonds.png');
+    border-image-slice: 27;
+    border-image-repeat: stretch;
+    border-image-width : 8px;
+    border-image-outset: 10px; */
+}

@@ -1,0 +1,73 @@
+div 
+{
+    border: 12px solid green;
+}
+
+
+p 
+{
+    font-size: 18px;
+    
+    /* ----------------- short hand ---------------- */
+    /* border: 1px solid black; */
+
+    /* ----------------- long hand ---------------- */
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+}
+
+#border-left 
+{
+     /* ----------------- short hand ---------------- */
+    /* border-left:2px dotted #1ce; */
+
+     /* ----------------- long hand ---------------- */
+    border-left-color: #1ce;
+    border-left-style: dotted;
+    border-left-width: 4px;
+}
+
+#border-right
+{
+    /* ----------------- short hand ---------------- */
+    /* border-right:2px dotted #1ce; */
+
+     /* ----------------- long hand ---------------- */
+    border-right-color: #1ce;
+    border-right-style: dotted;
+    border-right-width: 4px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 40px;
+}
+
+
+#border-top
+{
+     /* ----------------- short hand ---------------- */
+    /* border-top:2px dotted #1ce; */
+
+     /* ----------------- long hand ---------------- */
+    border-top-color: #1ce;
+    border-top-style: groove;
+    border-top-width: 4px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 40px;
+}
+
+
+#border-bottom
+{
+     /* ----------------- short hand ---------------- */
+    /* border-bottom:2px dotted #1ce; */
+
+     /* ----------------- long hand ---------------- */
+    border-bottom-color: #1ce;
+    border-bottom-style: groove;
+    border-bottom-width: 4px;
+}

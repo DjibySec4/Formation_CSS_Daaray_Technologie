@@ -1,0 +1,83 @@
+div.static 
+{
+    position: static;
+    left: 30px;
+ 
+    border: 3px solid black;
+}
+
+
+div.fixed 
+{
+    position: fixed;
+    bottom: 0;
+    right:0;
+    width: 300px;
+    border: 3px solid black;
+}
+
+
+div.relative 
+{
+    position: relative;
+    left: 30px;
+    border: 3px solid black;
+}
+
+div.relative2 
+{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+}
+ 
+/* body
+{
+    border: 3px solid black;
+} */
+div.absolute
+{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height:100px;
+    border: 3px solid #73AD21;
+}
+
+div.styicky
+{
+    position: sticky;
+    top: 0px;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 3px solid #4CAF50;
+}
+
+
+/* ---------------------------- Correction exo ------------------------------------- */
+.container > img 
+{
+    width: 100%;
+    height: 500px;
+    opacity: 0.5;
+}
+
+.container 
+{
+    position: relative;
+}
+
+div div 
+{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    text-shadow: 2px 3px 2px #fff;
+}
+

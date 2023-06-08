@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre la pseudo classe default</title>
+
+    <style>
+        input:default
+        {
+            box-shadow: 0 0 2px 1px coral;
+        }   
+
+        input:default + label
+        {
+            color:coral;
+        }   
+    </style>
+</head>
+<body>
+    
+    <div>
+        <input type="radio" name="genre" id="homme">
+        <label for="homme">Homme</label>
+
+        <input type="radio" name="genre" checked id="femme">
+        <label for="femme">Femme</label>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre la pseudo classe checked</title>
+
+    <style>
+        div, select 
+        {
+            margin: 8px;
+        }
+
+        /* séléctionner tous les label d'un input chécké */
+        input:checked + label 
+        {
+            color: red;
+        }
+
+        input[type="radio"]:checked 
+        {
+            box-shadow: 0 0 0 3px blue;
+        }
+
+        input[type="checkbox"]:checked 
+        {
+            box-shadow: 0 0 0 3px hotpink;
+        }
+
+        option:checked
+        {
+            box-shadow: 0 0 0 3px lime; 
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div>
+        <input type="radio" name="myInput" id="yes">
+        <label for="yes">Oui</label>
+
+        <input type="radio" name="myInput" checked id="no">
+        <label for="no">Non</label>
+    </div>
+
+    <div>
+        <input type="checkbox" name="myCheckbox" id="myOption">
+        <label for="myOption">Cochez-moi !</label>
+    </div>
+
+    <select name="fruit" id="fruit">
+        <option value="banana">Banana</option>
+        <option value="pomme">Pomme</option>
+        <option value="mangue" >Mangue</option>
+    </select>
+    
+</body>
+</html>

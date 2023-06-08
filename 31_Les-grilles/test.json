@@ -1,0 +1,93 @@
+[
+    {
+        "nom" : "Fall",
+        "prenom" : "Sana",
+        "adresse" : 
+            {
+                "ville" : "Dakar",
+                "rue" : "rue 10",
+                "villa" : "A76"
+            },
+        "email" :  
+            {
+                "gmail" : "sana@gmail.com",
+                "ipd" : "sana@ipd.sn"
+            },
+        "Situation matrimoniale" : "Marie",
+        "NbEnfant" : 10,
+        "NbFemme" : 4
+    },
+    {
+        "nom" : "Sarr",
+        "prenom" : "Ibou",
+        "adresse" : 
+            {
+                "ville" : "Dakar",
+                "rue" : "rue 10",
+                "villa" : "A77"
+            },
+        "email" :  
+            {
+                "gmail" : "ibou@gmail.com",
+                "ipd" : "ibou@ipd.sn"
+            },
+        "Situation matrimoniale" : "Marie",
+        "NbEnfant" : 5,
+        "NbFemme" : 2
+    },
+    {
+        "nom" : "Seck",
+        "prenom" : "Modou",
+        "adresse" : 
+            {
+                "ville" : "Dakar",
+                "rue" : "rue 10",
+                "villa" : "A76"
+            },
+        "email" :  
+            {
+                "gmail" : "modou@gmail.com",
+                "ipd" : "modou@ipd.sn"
+            },
+        "Situation matrimoniale" : "Marie",
+        "NbEnfant" : 1,
+        "NbFemme" : 1
+    },
+    {
+        "nom" : "Der",
+        "prenom" : "Moustapha",
+        "adresse" : 
+            {
+                "ville" : "Saint Loius",
+                "rue" : "Rue st",
+                "villa" : "A78"
+            },
+        "email" :  
+            {
+                "gmail" : "der@gmail.com",
+                "ipd" : "der@ipd.sn"
+            },
+        "Situation matrimoniale" : "Marie",
+        "NbEnfant" : 10,
+        "NbFemme" : 4
+    },
+    {
+        "nom" : "Sarr",
+        "prenom" : "Abdoul Karim",
+        "adresse" : 
+            {
+                "ville" : "Dakar",
+                "rue" : "rue 10",
+                "villa" : "A76"
+            },
+        "email" :  
+            {
+                "gmail" : "ak@gmail.com",
+                "ipd" : "ak@ipd.sn"
+            },
+        "Situation matrimoniale" : "Célibataire",
+        "NbEnfant" : 10,
+        "NbFemme" : 4
+    }
+    
+]

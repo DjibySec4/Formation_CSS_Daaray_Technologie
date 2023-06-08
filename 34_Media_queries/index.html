@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre les medias queries</title>
+</head>
+<body>
+
+        <h1>Apprendre les medias queries</h1>
+
+        <style>
+            @media (min-width: 30em) and (orientation: landscape)
+            {
+                /*  */
+            } 
+
+            @media screen and (min-width: 100px) and (orientation: landscape)
+            {
+                /*  */
+            } 
+
+            @media screen and (min-height: 100px) and (orientation: portrait)
+            {
+                /*  */
+            } 
+
+            @media only screen and (min-height: 100px)
+            {
+                /*  */
+            } 
+
+
+            /* Media queries level 4 */
+            /* Exemple 1 */
+            @media (width <= 100px)
+            {
+                /*  */
+            } 
+            /* Equivalent à */
+            @media (max-width : 100px)
+            {
+                /*  */
+            } 
+
+
+              /* Exemple 2*/
+            @media (30em <= width <=  50em)
+            {
+                /*  */
+            } 
+            /* Equivalent à */
+            @media (min-width : 30em) and (max-width : 50em)
+            {
+                /*  */
+            } 
+        </style>
+</body>
+</html>

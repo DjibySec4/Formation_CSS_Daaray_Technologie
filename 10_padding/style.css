@@ -1,0 +1,42 @@
+div 
+{
+    border: 12px solid orange;
+
+     /* ----------------- short hand ---------------- */
+
+    /* Applique la même valeur aux quatres côtés */
+    /* padding: 20px; */
+
+    /* y | x */
+    /* padding: 2% 15%; */
+
+    /* haut | x | bas */
+    /* padding: 1em 2em 4em; */
+
+    /* haut | droit | bas | gauche */
+    /* padding: 15px 20em 0 4em; */
+
+
+    /* ----------------- long hand ---------------- */
+
+    /* Valeur espacement gauche */
+    padding-left: 100px;
+
+    /* Valeur espacement droite */
+    padding-right: 50px;
+
+    /* Valeur espacement haut */
+     padding-top: 50px;
+
+    /* Valeur espacement bas */
+    padding-bottom: 200px;
+
+
+}
+
+
+p 
+{
+    border: 3px dotted black;
+    font-size: 18px;
+}

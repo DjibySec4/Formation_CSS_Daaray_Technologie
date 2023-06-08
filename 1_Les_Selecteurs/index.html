@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* p 
+        {
+            color: yellow;
+        } */
+    </style>
+</head>
+<body>
+
+    <h1>Apprendre CSS</h1>
+
+    <!-- Les selecteur d'attribut -->
+    <h3>Les selecteur d'attribut </h3>
+    <!-- 
+        1 -> a[nomAttribut]
+        2 -> a[nomAttribut=valeur]
+        3 -> a[nomAttribut|=valeur]
+        4 -> a[nomAttribut~=valeur]
+        6 -> a[nomAttribut*=valeur]
+        7 -> a[nomAttribut^=valeur]
+        8 -> a[nomAttribut$=valeur]
+     -->
+   
+    <a href="https://www.youtoube.com">Je suis un premier lien</a>
+    <a>Je suis un lien intermediaire</a>
+    <a href="#">Je suis un deuxieme lien</a><br><br>
+
+    <a href="test" class="Test hello world">Je suis le troisieme lien</a><br><br>
+    <a href="test-" class="Testhello world">Je suis le quatrieme lien</a><br><br>
+
+    <p class="daaray technologie">Je suis le premier paragraphe</p>
+    <p class="daaray_technologie">Je suis le deuxieme paragraphe</p> <br> <hr>
+
+
+    <h3>Exercice - selecteur d'attribut</h3>
+    <!-- 
+        Exo : Soit ce code HTML suivant :
+        Questions : 
+        ----------
+        1) Mettez tous les éléments divs avec un attribut `lang` en gras.
+        2) Mettez tous les divs en anglais américains (en-us) en couleur bleue.
+        3) Mettez tous les divs en portugais (pt) en couleur verte (green).
+        4) Mettez tous les divs en chinois en couleur rouge: chinois simplifié (zh-CN) ou traditionnel (zh-TW).
+        5) Mettez tous les divs en chinois possedant l'attribut `data-lang` en (purple).
+     -->
+     <div lang="en-us en-gb en-au en-nz">Premiere div</div>
+     <div lang="pt">Deuxieme div</div>
+     <div lang="zh-CN">Troisieme div</div>
+     <div lang="zh-TW">Quatrieme div</div>
+     <div data-lang="zh-TW">Cinquieme div</div>
+     <div>Sixieme div</div> <br> <hr>
+
+
+     <!-- Les selecteurs de classe -->
+     <!-- 
+        1er syntaxte : .nomClasse { déclarations CSS ICI}
+        2em syntaxte : [class~=nomClasse] { déclarations CSS ICI}
+      -->
+    <h3>Les selecteurs de classe </h3>
+    <ul>
+        <li class="item">Item 1</li>
+        <li class="item myItemPreferer">Item 2</li>
+        <li class="item">Item 3</li>
+    </ul>
+    <p class="item">Apprendre les selecteurs de classe</p> <br><hr>
+
+
+    <h3>Exercice - selecteur de classe</h3>
+     Soit ce code HTML suivant :
+    <h2>Je suis un titre</h2>
+    <p class="para1 color-red">Paragraphe 1</p>
+    <p class="p1 P1">Paragraphe 2</p>
+    <p class="para3 p1-para3">Paragraphe 3</p>
+    <p class="parA3 P1">Paragraphe 4</p>
+    <!--
+    1) Mettez tous les paragraphes dont la valeur de l’attribut `classe` se
+    termine par red en couleur rouge.
+    2) Mettez tous les paragraphes dont la valeur de l’attribut `classe` contient
+    p1 en gras et en brackground jaune.
+    3) Mettez tous les paragraphes dont la valeur de l’attribut `classe` contient
+    le mot a3 ou A3 en couleur gris claire (#c0c0c0)
+ -->
+ <br> <hr>
+
+
+    <!-- Les selecteurs d'id -->
+    <h3>Les selecteurs d'id </h3>
+     <!-- 
+        1er syntaxte : #valeur_identifiant { déclarations CSS ICI}
+        2em syntaxte : [id~=valeur_identifiant] { déclarations CSS ICI}
+      -->
+
+      <span id="mySpan">Je suis un span avec id</span>
+      <span>Je suis un span sans id </span>
+
+      <h3>Exercice - selecteur d'identifiant</h3>
+      Soit ce code HTML suivant :
+      <!-- 
+        1) Mettez tous les paragraphe d'id commancant par l2 en couleur #1ce
+       -->
+      <p id="l1">Ligne 1</p>
+      <p id="l1-2">Ligne 2</p>
+      <p id="l3">Ligne 3</p><br> <hr>
+
+
+      <!-- Les selecteurs de type -->
+      <h3>Les selecteurs de type </h3>
+      <!-- 
+        Syntaxes
+        --------
+        Soientt A et B 2 noms de balise :  
+        1) A B   -> Selectionner toutes les balises B qui sont dans une balise A
+        2) A, B  -> Selectionner toutes les balises A et toutes les balises B
+        3) A + B -> Selectionner la balise B qui vient directement après une balise A
+        4) A > B -> Selectionner toutes les balises B qui sont enfant de A
+        5) A ~ B -> Selectionner toutes les balises B qui sont frère de A
+       -->
+
+       <!-- Exercice d'application -->
+       <span>Voici un élément <code>span</code> avec du texte.</span> 
+       <p>Et là un élément <code>p</code>.</p>
+       <span>Enfin, un autre élément <code>span</code>.</span> 
+       Autres éléments HTML : <code>strong, b, ...</code> 
+       Autres éléments HTML : <code>i, em, ...</code>
+       <strong>Je suis une balise strong .</strong> 
+       <h3>Lorem, ipsum dolor sit amet consectetur 
+            <i>adipisicing elit1.</i>
+            <i>adipisicing elit2.</i>
+        </h3> 
+       <div>
+            <p id="dt">Daaray Technologie ma reférence !</p>
+            <p>Daaray Technologie mon secret !</p>
+       </div>
+
+       <!-- 
+        Questions : 
+        ----------
+        1) Mettez tous les éléments span en police verdana
+        2) Barrez tous les éléments code qui viennent directement après un élément span.
+        3) Augmentez la taille des contenus des éléments strong et p de 18px
+        4) Ajouter le contenu test (barré), dans tous les sous élément i possédant un élément parent h3 (modifier aussi sa couleur)
+        5) Souligner toutes les balises p, enfant d'une balise div
+        6) Changer la couleur de l'élément d'identifiant dt enfant d'une balise div
+        -->
+
+        <br> <hr>
+
+
+        <!-- Les selecteurs universels -->
+        <style>
+            *[lang^="fr"]
+            {
+                color: green;
+            }
+
+            * .maincontent span 
+            {
+                color: red;
+            }
+
+            * .warning span 
+            {
+                color: green;
+            }
+
+            * .warning 
+            {
+                color: red;
+            }
+        </style>
+        <h3>Les selecteurs universels </h3>
+        <p class="warning">
+            <span>Un span vert</span>dans un paragraphe rouge
+        </p>
+        <p class="maincontent" lang="fr">
+            <span>Un span rouge</span>dans un paragraphe vert
+        </p> <br>
+</body>
+</html>

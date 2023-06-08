@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre les transitions en CSS</title>
+
+    <style>
+        #transition 
+        {
+            /* Les valeur par défaut */
+            width: 200px;
+            height: 200px;
+            background-color: #06D;
+
+            /* La transition */
+            transition: 
+                width 10s 3s ease,
+                background-color 5s 1s ease,
+                color 5s;
+        }
+
+
+        #transition:hover 
+        {
+            width: 400px;
+            background-color: red;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- 
+        ● transition-property : Indique la propriété CSS qu’on applique à l'élément sélectionné.
+        ● transition-duration : Indique la durée de la transition.
+        ● transition-delay : Indique de délai de commencement de la transition
+        ● transition-timing-function : Indique la courbe de vitesse de la transition. Il peut prendre 5 valeur
+            1 -> linear : Pour créer une transition linéaire.
+            2 -> ease-in : Pour que la transition commence lentement
+            3 -> ease-out : Pour que la transition se termine lentement
+            4 -> ease-in-out : Pour que la transition commence lentement et se termine lentement.
+            5 -> ease : Pour que la transition commence lentement puis accélère au milieu et finisse lentement
+     -->
+
+     <div id="transition">
+            <p>Premier paragraphe</p>
+            <p>Deuxieme paragraphe</p>
+            <p>Troisieme paragraphe</p>
+     </div>
+</body>
+</html>

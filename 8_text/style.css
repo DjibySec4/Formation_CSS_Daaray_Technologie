@@ -1,0 +1,142 @@
+/* text-decoration */
+#text-decoration 
+{
+    /* short hand */
+    text-decoration: underline solid red 3px;
+
+    /* long hand */
+    /* text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style:wavy;
+    text-decoration-thickness: 3px;
+    -moz-text-decoration-line: underline; */
+}
+
+#text-decoration-lien 
+{
+    text-decoration: none;
+}
+/* text-align  */
+#text-align 
+{
+    /* text-align: start; */
+    /* direction: rtl;
+    unicode-bidi: bidi-override; */
+}
+/* vertical-align */
+p span
+{
+    color: red;
+    vertical-align: super;
+}
+/* text-align-last */
+#text-align-last 
+{
+    text-align-last: right ;
+}
+/*  text-indent, letter-spacing, word-spacing, line-height et white-space */
+#text-indent-plus 
+{
+    text-indent: 26px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    line-height: 25px;
+    white-space: nowrap;
+}
+/*  text-justify  */
+div p 
+{
+    font-size: 1.5em;
+    border: 1px solid black;
+    padding: 10px;
+    width: 95%;
+    margin: 10px auto;
+    text-align: justify;
+}
+.none 
+{
+    text-justify: none;
+}
+.auto 
+{
+    text-justify: auto;
+}
+.dist
+{
+    text-justify: distribute;
+}
+.word
+{
+    text-justify: inter-word;
+}
+.char
+{
+    text-justify: inter-character;
+}
+/* text-orientation */
+#text-orientation 
+{
+    text-orientation: sideways;
+    writing-mode: vertical-rl;
+    -webkit-text-orientation: sideways;
+}
+/* text-overflow */
+.text-overflow p  
+{
+    padding: 3px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.overflow-clip 
+{
+    text-overflow: clip;
+}
+.overflow-ellipsis 
+{
+    text-overflow: ellipsis;
+}
+/* text-shadow */
+#text-shadow 
+{
+    font-size: 40px;
+    /* x, y, rayon de flou, couleur */
+    /* text-shadow: 2px 3px 1px #1ce; */
+
+    /* couleur, x, y, rayon de flou, */
+    /* text-shadow: #fc0 1px 0 10px; */
+
+    /* x, y, couleur */
+    /* text-shadow: 2px 2px pink; */
+
+     /* x, y */
+    /* text-shadow: 2px 2px; */
+
+        /* couleur, x, y */
+    text-shadow: orange 2px 2px;
+}
+/* text-transform */
+#capitalize 
+{
+    text-transform: capitalize;
+}
+
+#uppercase
+{
+    text-transform: uppercase;
+}
+
+#lowercase 
+{
+    text-transform: lowercase;
+}
+
+#none 
+{
+    text-transform: uppercase;
+    text-transform: none;
+}
+/* text-emphasis */
+#emphasis 
+{
+    text-emphasis: '🤣';
+}

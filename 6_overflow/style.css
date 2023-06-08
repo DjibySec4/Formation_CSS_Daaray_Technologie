@@ -1,0 +1,12 @@
+div 
+{
+    background-color: coral;
+    width: 300px;
+    height: 65px;
+    border: 3px solid black;
+    overflow: auto;
+    margin: 0px auto;
+    /* position: absolute;
+    left: 33%;
+    right: 41%; */
+}

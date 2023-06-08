@@ -1,0 +1,181 @@
+/* Selectionne toutes les balises a qui possedent l'attr href  */
+/* a[href]
+{
+    background-color: brown;
+    color: white;
+    padding: 4px;
+} */
+
+/* Selectionne toutes les balises a qui possedent l'attr href dont la valeur = #  */
+/* a[href="#"]
+{
+    background-color: brown;
+    color: white;
+    padding: 4px;
+} */
+
+/* Selectionne toutes les balises a qui possedent l'attr href dont la valeur est test ou test-  */
+/* a[href|="test"] 
+{
+    background-color: brown;
+    color: white;
+    padding: 4px;
+} */
+
+
+/* Selectionne toutes les balises a qui possedent l'attr class dont la valeur contient le mot test  */
+/* a[class~="hello"] 
+{
+    background-color: brown;
+    color: white;
+    padding: 4px;
+} */
+
+
+/* Selectionne toutes les balises a qui possedent l'attr class dont la valeur contient une occurence de test  */
+a[class*="hello"] 
+{
+    background-color: brown;
+    color: white;
+    padding: 4px;
+}
+
+/* Selectionne toutes les balises a qui possedent l'attr href dont la valeur commence par "https"  */
+a[href^="https"]
+{
+    color: yellowgreen;
+}
+
+
+/* Selectionne toutes les balises p qui possedent l'attr class dont la valeur se termine par "technologie"  */
+p[class$="technologie" i]
+{
+    background-color: darkslategray;
+    color: #fff;
+}
+
+
+/* Correction exercice - selecteur d'attribut */
+/* 1) Mettez tous les éléments divs avec un attribut `lang` en gras. */
+div[lang]
+{
+    font-weight: bold;
+}
+/* 2) Mettez tous les divs en anglais américains (en-us) en couleur bleue. */
+div[lang~="en-us"]
+{
+    color: blue;
+}
+/* 3) Mettez tous les divs en portugais (pt) en couleur verte (green). */
+div[lang="pt"]
+{
+    color: green;
+}
+/* 4) Mettez tous les divs en chinois en couleur rouge: chinois simplifié (zh-CN) ou traditionnel (zh-TW). */
+div[lang="zh-CN"], div[lang="zh-TW"]
+{
+    color: red;
+}
+/* 5) Mettez tous les divs en chinois possedant l'attribut `data-lang` en (purple). */
+div[data-lang]
+{
+    color: purple;
+}
+
+
+/* ------------------------------  Les selecteurs de classe ------------------------------------- */
+/* .item 
+{
+  font-weight: bold;
+  text-decoration: underline;
+} */
+
+
+/* li.item
+{
+  font-weight: bold;
+  text-decoration: underline;
+} */
+
+li.item.myItemPreferer
+{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+/* -------------------------  Les selecteurs de classe -- Correction Exercice ------------------------- */
+/* 1) Mettez tous les paragraphes dont la valeur de l’attribut `class` se termine par red en couleur rouge.*/
+p[class$="red"]
+{
+    color: red;
+}
+
+/* 2) Mettez tous les paragraphes dont la valeur de l’attribut `class` contient 1 en gras et en brackground jaune. */
+p[class*="1"]
+{
+    font-weight: 700;
+    background-color: yellow;
+}
+/* 3) Mettez tous les paragraphes dont la valeur de l’attribut `class` contient le mot a3 ou A3 en couleur gris claire (#c0c0c0)*/
+p[class*="a3" i]
+{
+    color: #c0c0c0;
+}
+
+
+/* ------------------------------  Les selecteurs d'identifiant ------------------------------------- */
+#mySpan 
+{
+    background-color: blue;
+    color: white;
+}
+
+/* ------------------------------  Les selecteurs d'identifiant -- corection exo ------------------------------------- */
+
+/* 1) Mettez tous les paragraphe d'id commancant par l2 en couleur #1ce */
+p[id^="l1"]
+{
+    color: yellow !important;
+}
+
+p[id|="l1"]
+{
+    color: #1ce;
+    background-color: brown;
+}
+
+/* ------------------------------  Les selecteurs de type -- Correction Exo ----------------------------- */
+
+/* 1) Mettez tous les éléments span en police verdana */
+span 
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* 2) Barrez tous les éléments code qui viennent directement après un élément span. */
+span + code 
+{
+    text-decoration: line-through;
+}
+/* 3) Augmentez la taille des contenus des éléments strong et p de 18px */
+strong, p 
+{
+    font-size: 18px;
+}
+/* 4) Ajouter le contenu test (barré), dans tous les sous élément i possédant un élément parent h3 (modifier aussi sa couleur) */
+h3 i::after
+{
+    content: " test";
+    text-decoration: line-through;
+    color: red;
+}
+/* 5) Souligner toutes les balises p, enfant d'une balise div */
+div > p 
+{
+    text-decoration: underline;
+}
+/* 6) Changer la couleur de l'élément d'identifiant dt enfant d'une balise div */
+div > #dt
+{
+    color: red;
+}

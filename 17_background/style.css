@@ -1,0 +1,41 @@
+
+/* ------------------------ background-color ----------------------- */
+/* body 
+{
+    background-color:  #B9BAA3;
+    color: white;
+}
+
+h1 
+{
+    background-color: yellow;
+    color: black;
+} */
+
+/* ------------------------ background-image ----------------------- */
+/* body 
+{
+    background: left/cover url('../public/images/art.jpg');
+
+    background-image: url('../public/images/art.jpg');
+
+    background-image: url('data:image/jpeg;base64,...
+
+    background-image: linear-gradient(blue, red, yellow);
+} */
+
+/* ------------------------ background-attachment ----------------------- */
+#background-attachement 
+{
+    border: 2px solid black;
+    height: 500px;
+    background: right / cover url('../public/images/art.jpg');
+    background-attachment: fixed;
+}
+
+#p-background-attachement 
+{
+    font-size: 30px;
+}
+
+

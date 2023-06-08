@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre la pseudo classe disabled</title>
+</head>
+<body>
+    <h1>Apprendre la pseudo classe disabled</h1>
+
+    <form action="#">
+        <fieldset>
+            <legend>Adresse de livraison</legend>
+            <input type="text" placeholder="Nom">
+            <input type="text" placeholder="Adresse">
+            <input type="text" placeholder="Code postal">
+        </fieldset>
+
+        <fieldset id="facturation">
+            <legend>Adresse de facturation</legend>
+
+            <label for="sameAdress">Identique à l'adresse de livraison</label>
+            <input type="checkbox" id="sameAdress" checked onchange="javascript:showHideInputsFacturation()"> <br>
+
+            <input type="text" placeholder="Nom" disabled>
+            <input type="text" placeholder="Adresse" disabled>
+            <input type="text" placeholder="Code postal" disabled>
+        </fieldset> <br>
+
+        <center>
+            <button style="background-color: green; color: white; font: bold;">Envoyer</button>
+        </center>
+
+    </form>
+
+
+
+    <script>
+        function showHideInputsFacturation()
+        {
+            var inputs = document.querySelectorAll('#facturation input[type="text"]')
+        
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].disabled  = !inputs[i].disabled;
+            }
+        }
+    </script>
+</body>
+</html>

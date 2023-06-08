@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre la propriété CSS text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        text
+            text-decoration
+                # text-decoration-line 
+                    underline 
+                    overline 
+                    line-through 
+                    none
+                # text-decoration-color
+                # text-decoration-style 
+                    solid 
+                    dotted 
+                    dashed 
+                    dougle 
+                    groove 
+                    ridge 
+                    inset 
+                    outset 
+                    wavy
+                    none
+                # text-decoration-thickness 
+            text-align 
+                # center 
+                # left
+                # right
+                # justify 
+                # start 
+                # end
+            vertical-align
+                # super 
+                # sub 
+                # sup 
+                # middle 
+                # text-top
+                # text-bottom 
+                # baseline
+                # top 
+
+            text-align-last
+                # center 
+                # left
+                # right
+                # justify 
+                # start 
+                # end
+            text-indent
+            letter-spacing
+            word-spacing
+            line-height
+            white-space
+            text-justify
+                # none
+                # auto 
+                # inter-word 
+                # inter-character 
+                # distribute 
+            text-orientation
+            text-overflow
+            text-shadow
+                x  - y -  rayon de flou - color
+            text-transform
+            text-emphasis
+     -->
+
+
+    <!--  text-decoration -->
+    <h3> text-decoration</h3>
+    <p id="text-decoration">Je suis un paragraphe créer pour tester la propriété css text-decoration</p>
+    <a id="text-decoration-lien" href="#">Lien test</a> <br> <hr>
+
+
+    <!--  text-align -->
+    <h3> text-align</h3>
+    <p id="text-align">Je suis un paragraphe créer pour tester la propriété css text-align</p><br> <hr>
+
+
+    
+    <!--  vertical-align -->
+    <h3> vertical-align</h3>
+    <p id="vertical-align">Je <span>suis</span> un paragraphe créer pour tester la propriété css vertical-align</p><br> <hr>
+
+
+    <!--  text-align-last -->
+    <h3> text-align-last</h3>
+    <p id="text-align-last">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Dolore adipisci repellendus culpa tempore ullam enim quasi a pariatur suscipit. Sed fugiat 
+        Dolore adipisci repellendus culpa tempore ullam enim quasi a pariatur suscipit. Sed fugiat 
+        Dolore adipisci repellendus culpa tempore ullam enim quasi a pariatur suscipit. Sed fugiat 
+        Dolore adipisci repellendus culpa tempore ullam enim quasi a pariatur suscipit. Sed fugiat 
+        culpa totam corrupti iure saepe, explicabo in magnam neque!
+    </p><br> <hr>
+
+
+    <!--   text-indent, letter-spacing, word-spacing, line-height et white-space-last -->
+    <h3>  text-indent, letter-spacing, word-spacing, line-height et white-space-last</h3>
+    <p id="text-indent-plus">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Dolore adipisci repellendus culpa tempore ullam enim quasi a pariatur suscipit. Sed fugiat 
+        Dolore adipisci repellendus culpa tempore ullam enim quasi a pariatur suscipit. Sed fugiat 
+        Dolore adipisci repellendus culpa tempore ullam enim quasi a pariatur suscipit. Sed fugiat 
+        Dolore adipisci repellendus culpa tempore ullam enim quasi a pariatur suscipit. Sed fugiat 
+        culpa totam corrupti iure saepe, explicabo in magnam neque!
+    </p><br> <hr>
+ 
+
+    <!--  text-justify -->
+    <h3> text-justify</h3>
+    <div>
+        <p class="none">none -Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam expedita pariatur libero quam optio maiores illum eveniet nostrum dignissimos maxime veritatis, totam molestiae, cupiditate porro magnam obcaecati adipisci veniam accusantium.</p>
+        <p class="auto">auto - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam expedita pariatur libero quam optio maiores illum eveniet nostrum dignissimos maxime veritatis, totam molestiae, cupiditate porro magnam obcaecati adipisci veniam accusantium.</p>
+        <p class="dist">dist - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam expedita pariatur libero quam optio maiores illum eveniet nostrum dignissimos maxime veritatis, totam molestiae, cupiditate porro magnam obcaecati adipisci veniam accusantium.</p>
+        <p class="word">word - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam expedita pariatur libero quam optio maiores illum eveniet nostrum dignissimos maxime veritatis, totam molestiae, cupiditate porro magnam obcaecati adipisci veniam accusantium.</p>
+        <p class="char">char - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam expedita pariatur libero quam optio maiores illum eveniet nostrum dignissimos maxime veritatis, totam molestiae, cupiditate porro magnam obcaecati adipisci veniam accusantium.</p>
+    </div><br> <hr>
+ 
+
+    <!--  text-orientation -->
+    <h3> text-orientation</h3>
+    <p id="text-orientation">Test tourner</p><br> <hr>
+
+
+    <!--  text-overflow -->
+    <h3> text-overflow</h3>
+    
+    <div class="text-overflow">
+        <pre>clip</pre>
+        <p class="overflow-clip">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Dolorem maiores asperiores suscipit optio, expedita
+            deserunt voluptatem minus, ducimus enim corrupti repellat pariatur, 
+            tempore aut magni esse saepe sunt reiciendis! Magnam.
+        </p>
+
+        <pre>ellipsis</pre>
+        <p class="overflow-ellipsis">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Dolorem maiores asperiores suscipit optio, expedita
+            deserunt voluptatem minus, ducimus enim corrupti repellat pariatur, 
+            tempore aut magni esse saepe sunt reiciendis! Magnam.
+        </p>
+    </div><br> <hr>
+
+
+     <!--  text-shadow -->
+     <h3> text-shadow</h3>
+     <p id="text-shadow">Texte affiché avec la propriété CSS text-shadow</p><br> <hr>
+
+
+      <!--  text-transform -->
+     <h3> text-transform</h3>
+     <p id="capitalize">Texte écrit en capitalize.</p>
+     <p id="uppercase">Texte écrit en uppercase.</p>
+     <p id="lowercase">Texte écrit en lowercase.</p>
+     <p id="none">Texte écrit en none.</p><br> <hr>
+
+
+       <!--  text-emphasis -->
+       <h3> text-emphasis</h3>
+
+       <p id="emphasis">Text écrit en emphasis</p>
+
+</body>
+</html>

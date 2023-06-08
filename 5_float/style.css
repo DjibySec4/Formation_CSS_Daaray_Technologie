@@ -1,0 +1,66 @@
+p img 
+{
+    width: 170px;
+    height: 140px;
+    float: right;
+    margin-left: 15px;
+
+}
+
+#p2
+{
+    /* clear: both; */
+}
+
+
+/* ------------------------------ Exo 1 ---------------------------- */
+div  .img-container 
+{
+   width: 33.33%;
+   float: left;
+   padding: 5px;
+}
+
+div .img-container img 
+{
+    width: 100%;
+}
+* 
+{
+    box-sizing: border-box;
+}
+
+/* ------------------------------ Exo 2 ---------------------------- */
+ul
+{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    border-bottom: 4px solid brown;
+}
+
+li 
+{
+    float: left;
+}
+
+li a
+{
+    display: inline-block;
+    color: #fff;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+} 
+
+.active 
+{
+    background-color: brown;
+}
+
+li a:hover 
+{
+    background-color: #111;
+}
